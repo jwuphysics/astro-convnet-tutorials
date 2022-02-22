@@ -3,7 +3,7 @@
 Example Pytorch code for running Barlow Twins for self-supervised learning.
 
 Uses Galaxy10_DECaLS images and a resnet18 backbone. Can train 30 epochs in about 
-2 hrs on an NVidia T4, using a max of ~8 GB of RAM.
+1.5 hrs on an NVidia T4, using a max of ~8 GB of RAM.
 """
 import h5py
 import numpy as np
