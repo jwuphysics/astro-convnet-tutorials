@@ -220,7 +220,7 @@ if __name__ == "__main__":
     )
 
     # initialize resnet18-like model
-    model = Model(feature_dim=32).cuda()
+    model = Model(feature_dim=feature_dim).cuda()
     train_opt = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=weight_decay)
 
     scaler = amp.GradScaler() # for automatic mixed precision, otherwise do `scaler = None`
